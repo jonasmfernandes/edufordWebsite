@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,25 +11,53 @@ body header {
   background-position: center;
   height: 100vh;
 }
-body nav {
+body header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5vh 8vw;
 }
-body nav img {
-  width: 15%;
-  height: 30%;
+body header nav img {
+  max-width: 200px;
+  height: auto;
 }
-body nav ul {
+body header nav ul {
   display: flex;
   list-style: none;
   text-transform: uppercase;
   color: white;
 }
-body nav ul li {
+body header nav ul li {
   margin-right: 25px;
 }
-body nav ul li:nth-child(5) {
+body header nav ul li:nth-child(5) {
   margin-right: 0px;
+}
+body header section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+body header section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+body header section div h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+  color: white;
+}
+body header section div p {
+  color: white;
+  text-align: center;
+  width: 70%;
+  font-weight: 200;
+}
+body header section div button {
+  padding: 3vh 3vw;
 }/*# sourceMappingURL=style.css.map */

@@ -99,7 +99,7 @@ header .hero div button:hover {
   color: #777;
 }
 .courses .container {
-  margin-top: 5%;
+  margin-top: 7%;
   display: flex;
   justify-content: space-between;
 }
@@ -107,7 +107,7 @@ header .hero div button:hover {
   flex-basis: 31%;
   background-color: #fff3f3;
   border-radius: 10px;
-  margin-bottom: 5%;
+  margin-bottom: 7%;
   padding: 20px 12px;
   transition: 0.3s;
 }
@@ -203,7 +203,7 @@ header .hero div button:hover {
   color: #777;
 }
 .facilities .row {
-  margin-top: 5%;
+  margin-top: 7%;
   display: flex;
   justify-content: space-between;
 }
@@ -225,4 +225,40 @@ header .hero div button:hover {
   margin-top: 16px;
   margin-bottom: 15px;
   text-align: left;
+}
+
+footer {
+  width: 80%;
+  height: 30vh;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 8vh;
+  gap: 3vh;
+}
+footer h1 {
+  font-size: 2.25rem;
+}
+footer p {
+  color: #777;
+}
+footer h4 {
+  color: #777;
+  font-weight: 400;
+}
+footer .media {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  transition: 0.3s;
+}
+footer .media i {
+  color: #f44336;
+}
+footer .media i:hover {
+  cursor: pointer;
+  color: #f44336;
+  transition: 0.3s;
 }/*# sourceMappingURL=style.css.map */

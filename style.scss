@@ -99,14 +99,14 @@ header {
     color: #777;
   }
   .container {
-    margin-top: 5%;
+    margin-top: 7%;
     display: flex;
     justify-content: space-between;
     .content {
       flex-basis: 31%;
       background-color: #fff3f3;
       border-radius: 10px;
-      margin-bottom: 5%;
+      margin-bottom: 7%;
       padding: 20px 12px;
       transition: 0.3s;
 
@@ -197,7 +197,7 @@ header {
         color: #777;
       }
     .row {
-        margin-top: 5%;
+        margin-top: 7%;
         display: flex;
         justify-content: space-between;
     }
@@ -221,4 +221,39 @@ header {
             text-align: left;
         }
     }
+}
+footer {
+    width: 80%;
+    height: 30vh;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 8vh;
+    gap: 3vh;
+    h1 {
+        font-size: 2.25rem;
+      }
+      p {
+        color: #777;
+      }
+      h4 {
+        color: #777;
+        font-weight: 400;
+      }
+      .media {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        transition: 0.3s;
+        i {
+            color: #f44336;
+            &:hover {
+                cursor: pointer;
+                color: #f44336;
+                transition: 0.3s;
+            }
+        }
+      }
 }

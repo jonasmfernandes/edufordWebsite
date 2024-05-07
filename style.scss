@@ -11,7 +11,9 @@ header {
     url(src/banner.png);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
 
   nav {
     display: flex;
@@ -19,27 +21,42 @@ header {
     align-items: center;
     padding: 5vh 8vw;
     img {
-      max-width: 150px;
+      width: 150px;
       height: auto;
       &:hover {
         cursor: pointer;
       }
     }
-    ul {
-      display: flex;
-      list-style: none;
-      text-transform: uppercase;
-      color: white;
-      li {
-        margin-right: 25px;
-        transition: 0.4s;
-        &:nth-child(5) {
-          margin-right: 0px;
-        }
-        &:hover {
-          cursor: pointer;
-          color: #f44336;
+    .nav-links {
+      flex: 1;
+      text-align: right;
+      ul {
+        li {
+          display: inline-block;
+          list-style: none;
+          text-transform: uppercase;
+          position: relative  ;
+          color: white;
+          margin-right: 25px;
           transition: 0.4s;
+          &:nth-child(5) {
+            margin-right: 0px;
+          }
+          &::after{
+            content: '';
+            width: 0%;  
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.3s;
+          }
+          &:hover::after {
+              width: 100%;
+          }
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
     }
@@ -185,75 +202,94 @@ header {
   opacity: 1;
 }
 .facilities {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 5vh;
-    h1 {
-        font-size: 2.25rem;
-      }
-      p {
-        padding-top: 1.5vh;
-        color: #777;
-      }
-    .row {
-        margin-top: 7%;
-        display: flex;
-        justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5vh;
+  h1 {
+    font-size: 2.25rem;
+  }
+  p {
+    padding-top: 1.5vh;
+    color: #777;
+  }
+  .row {
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
     }
-    .facilities-col {
-        flex-basis: 31%;
-        border-radius: 10px;
-        margin-bottom: 5%;
-        text-align: left;
-    
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        p {
-            padding: 0;
-        }
-        h3 {
-            margin-top: 16px;
-            margin-bottom: 15px;
-            text-align: left;
-        }
+    p {
+      padding: 0;
     }
+    h3 {
+      margin-top: 16px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+  }
 }
 footer {
-    width: 80%;
-    height: 30vh;
-    margin: auto;
-    text-align: center;
+  width: 80%;
+  height: 30vh;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 8vh;
+  gap: 3vh;
+  h1 {
+    font-size: 2.25rem;
+  }
+  p {
+    color: #777;
+  }
+  h4 {
+    color: #777;
+    font-weight: 400;
+  }
+  .media {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 8vh;
-    gap: 3vh;
-    h1 {
-        font-size: 2.25rem;
-      }
-      p {
-        color: #777;
-      }
-      h4 {
-        color: #777;
-        font-weight: 400;
-      }
-      .media {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
+    justify-content: center;
+    gap: 40px;
+    transition: 0.3s;
+    i {
+      color: #f44336;
+      &:hover {
+        cursor: pointer;
+        color: #f44336;
         transition: 0.3s;
-        i {
-            color: #f44336;
-            &:hover {
-                cursor: pointer;
-                color: #f44336;
-                transition: 0.3s;
-            }
-        }
       }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  header .hero div h1 {
+    font-size: 20px;
+  }
+  header nav ul li {
+    display: block;
+  }
+  header nav {
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+  }
 }

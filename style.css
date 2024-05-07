@@ -128,7 +128,6 @@ header .hero div button:hover {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 5vh;
 }
 .campus h1 {
   font-size: 2.25rem;
@@ -140,7 +139,7 @@ header .hero div button:hover {
 .campus .container {
   display: flex;
   padding-top: 10vh;
-  gap: 20px;
+  gap: 40px;
 }
 .campus .container .campus-col {
   flex-basis: 32%;
@@ -188,4 +187,42 @@ header .hero div button:hover {
 .layer:hover h3 {
   bottom: 49%;
   opacity: 1;
+}
+
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5vh;
+}
+.facilities h1 {
+  font-size: 2.25rem;
+}
+.facilities p {
+  padding-top: 1.5vh;
+  color: #777;
+}
+.facilities .row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.facilities .facilities-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.facilities .facilities-col img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.facilities .facilities-col p {
+  padding: 0;
+}
+.facilities .facilities-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */

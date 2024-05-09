@@ -70,9 +70,6 @@ EduFord: Empowering Learning
 
 Welcome to EduFord, where we empower learners to shape their futures. With a diverse range of courses and resources, we offer personalized learning experiences for all. Join us on a journey of discovery and growth. Start your educational journey with EduFord today.
 
-* [![HTML][Html][(https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]
-<img src="{(https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)}/>
-
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
@@ -179,7 +176,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Jonas Monteiro Fernandes - mfernandes.jonas@gmail.com
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jonas-monteiro-fernandes/)
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 

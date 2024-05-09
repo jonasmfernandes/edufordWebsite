@@ -70,8 +70,7 @@ EduFord: Empowering Learning
 
 Welcome to EduFord, where we empower learners to shape their futures. With a diverse range of courses and resources, we offer personalized learning experiences for all. Join us on a journey of discovery and growth. Start your educational journey with EduFord today.
 
-* [![HTML][Html][[Next-url](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]
-* 
+* [![HTML][Html][(https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
